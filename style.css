@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content-width {
+    max-width: 1250px;
+}
+
+.navbar-brand i {
+    color: #fd7400;
+    border: 1px solid #fd7400;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 25%;
+
+}
+
+.navbar-brand {
+    font-size: 18px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+/* Slider Section */
+.slider-section {
+    background: url(https://cdn.xsd.cz/resize/aa923dc4a98831d7984cac09d47bd85d_extract=318,212,1727,971_resize=648,365_.jpg?hash=1690a2fc9da72e0f050b66176e1ba20e) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-section::after {
+    content: "";
+    height: 100%;
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.slider-caption h4 {
+    margin-bottom: 35px;
+}
+
+.slider-caption h2 {
+    margin-bottom: 50px;
+    font-size: 46px;
+}
+
+
+
+.slider-caption .form-control {
+    padding: 18px 20px;
+}
+
+/*  Abput Section  */
+.about-section {
+    background: #f7f9ff;
+}
+
+.about-text-left {
+    margin-top: 120px;
+}
+
+.about-text-left .lead {
+    font-size: 25px;
+    line-height: 2.7rem;
+}
+
+/*  Feature Section css */
+.feature-item {
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+
+.feature-item .left-img-sec {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.left-test-sec {
+    width: 60%;
+    padding: 25px;
+}
+
+.left-img-sec img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+
+.left-test-sec p {
+    font-size: 15px;
+}
+
+/*  Portolio Hover Css  */
+.portfolio-item {
+    transition: .6s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-item a {
+    position: relative;
+    display: block;
+}
+
+.portfolio-item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223, .2);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.portfolio-item:hover a::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.min-section-bg {
+    background-color: #f7f9ff;
+}
+
+.number-counter {
+    background: #f7f9ff;
+    ;
+}
